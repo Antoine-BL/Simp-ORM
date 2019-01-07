@@ -31,17 +31,17 @@ GenericDao<ExampleEntity> dao = new GenericDao<ExampleEntity>(dbAdapter);
 
 #### Getting table contents
 ```csharp
-IList<ExampleEntity> tableContents = dao.FindAll();
+IList<ExampleEntity> tableContents = dao.FindAll(); //Selects all from Entities table
 ```
 
-#### Getting records from an example
+#### Query using an example
 ```csharp
-ExampleEntity exampleInstance = new ExampleEntity 
+ExampleEntity exampleInstance = new ExampleEntity
 {
   Property = 5
 };
 
-ExampleEntity entityWithPropValueEqual5 = dao.Find(exampleInstance);
+ExampleEntity entityWithPropValueEqual5 = dao.Find(exampleInstance);  //Selects from Entities table where property = 5
 ```
 
 #### Creating, Update, Delete
