@@ -1,7 +1,7 @@
 # Simp-ORM
 
 ## Introduction
-A simple ORM for .NET/T-SQL I made for my Web Server Programming II final project ([repo here](https://github.com/CGGTeam/GGFlix).
+A simple ORM for .NET/T-SQL I made for my Web Server Programming II final project ([repo here](https://github.com/CGGTeam/GGFlix)).
 
 ## How it works
 The library works by using C# Attributes to map Tables, Columns and ID Columns in SQL to a class' properties and fields. The GenericDao class can then be used to retrieve table data and convert it into instances of a corresponding domain class that has been properly annotated.
